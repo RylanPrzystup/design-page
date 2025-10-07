@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif
+}
+/* Header of page */
+
+body{
+    background-color: rgba(234, 227, 227, 0.741);
+}
+
+header{
+     text-align: center;
+     border-bottom: 2px solid black;
+     width: 60vw;
+     margin: 2px auto;
+}
+
+.head1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+}
+
+.head2{
+    color: grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* setting up grids */
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.whitespace{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 60vw;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+/* Img and caption */
+
+.tlh{
+    width: 80%;
+    font-size: 2em;
+    
+}
+
+.tlp{
+    width: 80%;
+    font-size: 1rem;
+}
+
+.t{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "tl tl tr";
+}
+
+.tl{
+    width: 600px;
+    grid-area: tl;
+}
+
+.tr{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    grid-area: tr;
+    background-color: #cccc;
+    width: 400px;
+}
+
+.trt{
+    height: 58%;
+}
+
+
+.trtt, .trtb{
+    border-bottom: 1px solid black;
+}
+
+.trtb{
+    list-style: none;
+    margin: 3px;
+    border-bottom: 1px black solid;
+}
+
+/* Editors note */
+.trb{
+    grid-area: trb;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(91, 57, 35);
+    width: 100%;
+    height: 38%;
+    color: white;
+    padding: 10px;
+}
+
+
+/* Middle of page */
+.m{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "ml mm mr";
+    margin-top: 10px;
+}
+
+.mimg{
+    height: 200px;
+    width: 30%;
+}
+
+.ml, .mm, .mr{
+    margin-right: 20px;
+}
+
+.ml{
+    grid-area: ml;
+}
+
+.mm{
+    grid-area: mm;
+
+}
+
+.mr{
+    grid-area: mr;
+}
+
+.b{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas: 
+    "yaoi pinkbox";
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+
+
+.pinkbox{
+    display: flex;
+    text-align: center;
+    align-content: center;
+    background-color: pink;
+    flex-direction: column;
+
+}
+
+.quote{
+    font-size: 2em;
+}
